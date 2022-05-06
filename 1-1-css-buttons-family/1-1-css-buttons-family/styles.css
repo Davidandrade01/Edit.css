@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.buttons__wrapper {
+    width: 500px;
+    margin: 16px auto;
+    
+    
+    
+}
+
+.d-flex {
+    display: flex;
+    gap: 12px;
+
+    
+}
+.btn{color: gainsboro;
+    background-color: gainsboro;
+    border: 2px;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid gainsboro;
+
+  }
+        
+.primary{ background-color:#1652F0; border-color:#1652F0; color: #1652F0;}
+.success{ background-color: #14cf3c; border-color: #14cf3c; color: #14cf3c;}
+.warning{ background-color:#dbac2b;border-color: #dbac2b;color: #dbac2b; }
+.danger{ background-color: #cf1414;border-color: #cf1414;color: #cf1414} 
+
+.normalButtons{color: white;}
+.buttonsSmall{padding: 6px; color: white;}
+.outlines{background-color: transparent;
+            }
+
+
