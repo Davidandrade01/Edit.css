@@ -1,0 +1,77 @@
+@import 'variables';
+
+@mixin flex-config {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px;
+    padding-bottom: 5px;
+    align-items: center;
+    border-bottom: 1px solid $bg-color;
+
+
+}
+
+@mixin btn-activ {
+    background-color: $text-color;
+    color: $secondary-color;
+
+}
+
+@mixin btn1 {
+    background-color: $primary-color;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+
+    &:hover {
+        background-color: $text-color;
+    }
+
+}
+
+@mixin paragraph {
+    padding-bottom: 15px;
+    width: 50%;
+    margin: auto;
+
+}
+
+@mixin h2 {
+    font-size: 40px;
+    font-weight: 500;
+    padding: 50px 0 20px 0;
+}
+
+@mixin h3 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 50px 0 20px 0;
+}
+
+
+@mixin btn2 {
+    background-color: $secondary-color;
+
+    padding: 10px;
+    border: 1px solid $bg-color;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+    &:hover {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+    }
+
+}
+
+@mixin flex-query {
+    display: flex;
+    flex-direction: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+}
