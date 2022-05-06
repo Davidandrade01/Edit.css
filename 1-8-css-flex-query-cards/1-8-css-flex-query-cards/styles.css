@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,500&display=swap');
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* media query a utilizar em mobile */
+/* para screen, entre 0 e o maximo width de 768px*/
+
+
+.title>p {
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #374A59;
+}
+
+.container {
+    padding-top: 0px;
+    display: flex;
+    justify-content: space;
+    gap: 8px;
+}
+
+.cards {
+    width: 318px;
+    height: 400px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+
+}
+
+.imagem {
+    width: 318px;
+    height: 168px;
+    border-radius: 16px 16px 0px 0px;
+    background-color: #BCD1FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prod {
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    color: #6E798C;
+    font-weight: 600;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.body-text {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h3 {
+    color: #081F32;
+}
+
+
+p {
+    font-size: 13px;
+    color: #374A59;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.parent-component {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.avatar,
+.info-text {
+    width: 50%;
+
+    display: flex;
+    justify-content: space;
+    gap: 5px;
+    align-items: center;
+    color: #007AE9;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.info-text {
+    justify-content: flex-end;
+}
+
+.img-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+}
+
+.img-avatar>img {
+    height: 100%;
+    width: 100%;
+}
+
+span {
+    font-size: 11px;
+}
+
+@media screen and (max-width: 769px) {
+
+    .container {
+        position: relative;
+        flex-direction: column;
+    }
+
+
+    .cards {
+        width: 405px;
+        height: 98px;
+        display: block;
+        position: relative;
+        
+    }
+
+    .imagem {
+        width: 98px;
+        height: 98px;
+        border-radius: 16px 0px 0px 16px ;
+    }
+
+    .imagem>img {
+        width: 71px;
+        height: 71px;
+    }
+
+    .prod {
+        width: 405px;
+        justify-content: space-around;
+        padding: 2px;
+        position: absolute;
+        top: 6px;
+        left: 12%;
+    }
+
+    h3 {
+        font-size: 15px;
+        position: absolute;
+        top: 15px;
+        left: 118px;
+    }
+    .body-text>p {
+        display: none;
+    }
+
+    .info-text {
+        position: absolute;
+        bottom: 0%;
+        right: 2px;
+    }
+
+    .avatar {
+        visibility: hidden;
+    }
+
+}
