@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* font para utilizar */
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    background-color: black;
+
+
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 200px;
+    height: 100vh;
+    color: white;
+
+
+}
+
+.logo {
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .5px solid gainsboro;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+
+
+.logo>a {
+    align-items: center;
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+
+
+}
+
+.left-menu {
+    text-decoration: none;
+    color: white;
+    border-bottom: .5px solid gray;
+    padding: 12px;
+    transition-timing-function: ease-in-out;
+    transition-property: all 2s;
+    opacity: 1s;
+    transition: .5s;
+    z-index: 1;
+    
+    position:relative;
+    position: sticky;
+    left: 0;
+    top: ;
+    
+
+
+}
+
+.left-menu::after {
+    content: '';
+    display: block;
+    background: red;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s;
+}
+
+
+.left-menu:hover::after {
+    width: 100%
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+
+.top-menu-text>a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 12px;
+}
+
+.top-menu-icons>a {
+    padding: 0px 16px;
+}
+
+main {
+    width: calc(100% - 200px);
+    position: relative;
+}
+
+.title-Image {
+    display: flex;
+}
+
+.title-Image>img {
+    width: 100%
+}
+
+
+.maid-control {
+    height: 100px;
+    width: 250px;
+
+    position: absolute;
+    top: 400px;
+
+}
+
+.maid-control>h3 {
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    padding-left: 12px;
+}
+
+
+
+.btn {
+    display: flex;
+    padding: 12px;
+    justify-content: space;
+    gap: 10px;
+}
+.btn>a{text-decoration: none;
+}
+
+.play-btn {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.info-btn {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgba(220, 220, 220, 0.418);
+    color: white;
+    border: none;
+    cursor: pointer
+}
+
+.shows {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space;
+    gap: 10px;
+    align-items: center
+}
+
+.shows>h3 {
+    color: white;
+    align-items: center;
+}
+
+.shows>img {
+    padding-top: 3px;
+}
+
+.shows-films {
+    display: flex;
+    overflow-x: scroll;
+
+    display: flex;
+    justify-content: space;
+    gap: 8px;
+}
+
+.shows-films>a>img {
+    width: 200px;
+}
